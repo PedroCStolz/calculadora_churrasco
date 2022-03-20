@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaCarne(quantidadeMulheres, quantidadeHomens) {
+
+		return calculaCarne = (quantidadeMulheres * 0.3) + (quantidadeHomens * 0.5);
+	}
+
+	var quantidadeMulheres = prompt("Informe o número de mulheres em seu churrasco:");
+	var quantidadeHomens = prompt("Informe o número de homens em seu churrasco:");
+
+	var quantidadeCarne = calculaCarne(quantidadeMulheres, quantidadeHomens);
+
+	mostra("A quantidade de carne que você deverá comprar é " + quantidadeCarne + "kg.")
+
+</script>
